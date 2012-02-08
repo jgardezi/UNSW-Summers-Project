@@ -9,13 +9,32 @@
 	<link href="css/960/text.css" rel="stylesheet" type="text/css">
 	<link href="css/960/reset.css" rel="stylesheet" type="text/css">
 	
+	<style type="text/css">
+      #map_canvas { height: 100% }
+    </style>
+	
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	
+	<script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDIUFVz5wdx5C1pUWEy6LBz0boRRJndxPU&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var myOptions = {
+          center: new google.maps.LatLng(-34.397, 150.644),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            myOptions);
+      }
+    </script>
+		
 	<script type="text/javascript" src="js/main.js"></script>
 </head>
-<body>
+<body onload="initialize();">
 	<div id="wrapper" class="container_16">
 	
 		<header id="mainheader" class="grid_16">
@@ -39,6 +58,10 @@
 			    </ul>
 			</nav>	
 		</header>
+		
+		<section id="googleMap" class="grid_16">
+			<div id="map_canvas"></div>
+		</section>
 		
 		<section id="contactArea" class="grid_8">
 			<h2>Contact Information</h2>
