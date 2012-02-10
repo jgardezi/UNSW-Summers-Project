@@ -1,5 +1,68 @@
+/*
+ * General styles 
+ */
 body {
 	background: none repeat scroll 0 0 #DDDDDD;
+	font-size: 16px;
+	font-family: 'Droid San', sans-serif;
+	line-height: 24px;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+p {
+	margin: 0 0 24px 0;
+}
+
+/*headings*/
+h2 {
+	font-family: 'Droid San', serif;
+	font-size: 36px;
+	line-height: 48px;
+	margin: 0 0 24px 0;
+	font-weight: 700;
+}
+h3 {
+	font-family: 'Droid Sans', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	border-bottom: 4px double #1d1d1d;
+	border-top: 4px double #1d1d1d;
+	padding: 4px 0;
+	margin-bottom: 8px;
+}
+
+/*blockquote*/
+
+blockquote {
+	font-family: 'Droid Serif', serif;
+	font-size: 36px !important;
+	line-height: 36px;
+	font-style: italic;
+	font-weight: 700;
+}
+
+.intro a span {
+	font-style: italic;
+	font-weight: normal;
+	padding: 0 0 0 0.5em;
+}
+
+/*layout*/
+
+h1.logo a {
+	width: 80px;
+	padding: 12px 10px;
+	background: #1d1d1d;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	height: 72px;
 }
 #wrapper {
 	background-color: #fff;
