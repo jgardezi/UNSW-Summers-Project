@@ -9,6 +9,7 @@ body {
 }
 a {
 	text-decoration: none;
+	color: black;
 }
 a:hover {
 	text-decoration: none;
@@ -53,18 +54,72 @@ blockquote {
 
 /*layout*/
 
-h1.logo a {
-	width: 80px;
-	padding: 12px 10px;
-	background: #1d1d1d;
-	display: block;
-	color: #fff;
-	text-decoration: none;
-	font-size: 12px;
-	font-weight: bold;
-	height: 72px;
-}
+
 #wrapper {
 	background-color: #fff;
 	overflow: hidden;
+}
+
+header section#logo {
+	height: 220px;
+}
+header aside#logo_unsw {
+	height: 220px;
+}
+header section#logo a {
+	width: 400px;
+	padding: 12px 10px;
+	display: block;
+	text-decoration: none;
+	font-size: 48px;
+	font-weight: bold;
+}
+header aside#logo_unsw h1 {
+	text-transform: uppercase;
+	padding: 42px 0px 0px 10px;
+	display: block;
+	text-decoration: none;
+	font-size: 48px;
+	font-weight: bold;
+}
+
+/*main menu style*/
+#mainNav {
+	margin: auto;
+}
+#siteNav {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	padding-right: 0px;
+	height: 60px;
+	list-style-type: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .2)
+}
+ul#siteNav li {
+	display: inline;
+	padding: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;	
+}
+.link a {
+	cursor: pointer;
+	text-align: center;
+	font: 16px/100% Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	position: relative;
+	min-width: 50px;
+	height: 20px;
+	/*float: left;*/
+	padding: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-decoration: none;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3)
 }
