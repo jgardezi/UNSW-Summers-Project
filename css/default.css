@@ -2,8 +2,9 @@
  * General styles 
  */
 body {
+	background: #F2F2F2;
 	font-size: 16px;
-	font-family: 'Droid San', sans-serif;
+	font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif;
 	line-height: 24px;
 }
 a {
@@ -55,12 +56,11 @@ blockquote {
 
 
 #wrapper {
-	background-color: #fff;
 	overflow: hidden;
 }
 
 header#mainheader {
-	margin-bottom: 50px;
+	/*margin-bottom: 50px;*/
 }
 header section#logo {
 	height: 180px;
@@ -89,7 +89,7 @@ header aside#logo_unsw h1 {
 #mainNav {
 	margin: auto;
 }
-#mainNav h1{
+#mainNav h1, #pageNav h1{
 	display: none;
 }
 #siteNav {
@@ -169,7 +169,55 @@ ul#siteNav li {
 /*
  * main content styles
  */
-#textArea blockquote {
+#middleblock {
+	margin-top: 50px;
+}
+header#newsHd {
+	margin: 20px 10px 30px 10px;
+}
+header#newsHd nav {
+	text-align: left;
+	position: relative;	
+	height: 160px;
+	list-style-type: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .2)
+}
+header#newsHd nav ul {
+	height: 140px;
+	padding: 10px 0px;
+}
+header#newsHd nav ul li {
+	display: block;
+	margin-left: 30px;
+	height: 128px;
+	width: 128px;
+	position: relative;
+	float: left;
+}
+header#newsHd nav ul#newsNav li {
+	background: url("../images/icons/news_2.png") #fff top center no-repeat;
+}
+header#newsHd nav ul#peopleNav li {
+	background: url("../images/icons/groups-icon_2.png") #fff top center no-repeat;
+}
+header#newsHd nav ul li a{
+	display: block;
+	margin-top: 115px;
+	padding-left: 26px;
+	font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif;
+ 	font-size: 0.8em;
+    line-height: 1.6;
+}
+#textArea {
+	background: url("images/global/page.png") repeat-y scroll 0 0 #FFFFFF;
+	border: 1px solid #DDDDDD;
+}
+#textblock blockquote {
 	padding-top: 20px;
 	padding-left: 20px;
 }
@@ -179,6 +227,31 @@ ul#siteNav li {
     width: 440px; /* Change this to your images width */
     height: 246px; /* Change this to your images height */
 	padding-right: 20px;
+}
+section#textArea article.newsarea {
+	padding: 0px 30px;
+}
+section#textArea article h1 {
+	font-family: Georgia,serif;
+    font-size: 2em;
+    font-weight: normal;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+section#textArea article p {
+	font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif;
+ 	font-size: 1.0em;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    padding: 0 30px 0 0;
+}
+section#textArea article p.meta {
+	font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif;
+ 	font-size: 0.8em;
+    line-height: 1.6;
+    margin: 4px 0 8px 0;
+    padding: 0 30px 0 0;
 }
 /*
  * footer styles
