@@ -2,7 +2,6 @@
  * General styles 
  */
 body {
-	background: none repeat scroll 0 0 #DDDDDD;
 	font-size: 16px;
 	font-family: 'Droid San', sans-serif;
 	line-height: 24px;
@@ -61,13 +60,13 @@ blockquote {
 }
 
 header#mainheader {
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 }
 header section#logo {
-	height: 220px;
+	height: 180px;
 }
 header aside#logo_unsw {
-	height: 220px;
+	height: 180px;
 }
 header section#logo a {
 	width: 400px;
@@ -115,7 +114,7 @@ ul#siteNav li {
 .link a {
 	cursor: pointer;
 	text-align: center;
-	font: 16px/100% Verdana, Geneva, sans-serif;
+	font: 16px/100% 'Droid Serif', serif;
 	font-weight: bold;
 	position: relative;
 	min-width: 50px;
@@ -168,5 +167,30 @@ ul#siteNav li {
 }
 
 /*
- * nivo-slider styles
+ * main content styles
  */
+#textArea blockquote {
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+/*
+ * footer styles
+ */
+footer#mainfooter {
+	color: #6E6E6E;
+	font-size: 12px;
+	text-align: center;
+	border-top: thin solid #E5E5E5;
+	border-bottom: thin solid #E5E5E5;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+footer#mainfooter p{
+	padding: 5px;
+}
+footer#mainfooter p a{
+	color: #6E6E6E;
+	font-size: 12px;
+	font-style: italic;
+}
