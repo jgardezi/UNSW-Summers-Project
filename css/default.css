@@ -173,17 +173,24 @@ ul#siteNav li {
 	padding-top: 20px;
 	padding-left: 20px;
 }
-
+.slider-wrapper {
+	clear: both;
+    position: relative;
+    width: 440px; /* Change this to your images width */
+    height: 246px; /* Change this to your images height */
+	padding-right: 20px;
+}
 /*
  * footer styles
  */
 footer#mainfooter {
+	clear: both;
 	color: #6E6E6E;
 	font-size: 12px;
 	text-align: center;
 	border-top: thin solid #E5E5E5;
 	border-bottom: thin solid #E5E5E5;
-	margin-top: 30px;
+	margin-top: 60px;
 	margin-bottom: 30px;
 }
 footer#mainfooter p{
