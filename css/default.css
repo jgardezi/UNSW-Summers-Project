@@ -267,14 +267,42 @@ article#contactInfo h2 {
 article#contactInfo p {
 	padding: 10px 0px 0px 15px;
 	text-align: left;
+	font-weight: bold;
 }
-article#contactInfo p span{
+article#contactInfo p.normalText {
+	font-weight: normal;
+	padding-bottom: 30px;
+}
+article#contactInfo p span.contactAside {
+	display: block; 
+	margin-top: -24px;
+	margin-left: 130px;
+	border-bottom: 1px dotted #B7B7B7;
+	font-weight: normal;
+}
+aside#contactform form#messageForm {
+	padding-left: 30px;
+    padding-right: 10px;
+}
+aside#contactform form#messageForm label {
 	display: block;
-	text-align: left;
-}
-aside#contactform form{
+	width: 30px;
 	padding-right: 10px;
+	font-weight: bold;
 }
+aside#contactform form#messageForm input.inputText {
+	border: 1px solid #DDDDDD;
+    margin: 3px;
+    padding: 2px;
+    width: 350px;
+}
+aside#contactform form#messageForm textarea.inputTA {
+	border: 1px solid #DDDDDD;
+    margin: 3px;
+    padding: 2px;
+    width: 410px;
+}
+
 /*
  * footer styles
  */
