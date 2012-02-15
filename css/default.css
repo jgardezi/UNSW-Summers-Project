@@ -261,10 +261,19 @@ section#textArea article p.meta {
 /*
  * contact us page styles
  */
-div#middleArea {
+section#middleArea {
 	background: url("images/global/page.png") repeat-y scroll 0 0 #FFFFFF;
     border: 1px solid #DDDDDD;
     position: relative;
+}
+section#middleArea #map_canvas {
+	height: 260px;
+    margin: 35px 40px;
+    width: 860px;
+}
+section#middleArea #map_canvas img {
+	 width: 860px; 
+	 height: 260px;
 }
 article#contactInfo h2, article#contactInfo p{
 	font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif;
@@ -300,16 +309,28 @@ aside#contactform form#messageForm label {
 	font-weight: bold;
 }
 aside#contactform form#messageForm input.inputText {
+	background-color: #E7EBED;
 	border: 1px solid #DDDDDD;
     margin: 3px;
-    padding: 2px;
+    padding: 2px 10px 2px;
     width: 350px;
+	font-size: 14px;
+    height: 30px;
+	border-radius: 5px 5px 5px 5px;
 }
 aside#contactform form#messageForm textarea.inputTA {
+	background-color: #E7EBED;
 	border: 1px solid #DDDDDD;
     margin: 3px;
     padding: 2px;
-    width: 410px;
+    width: 380px;
+	font-size: 14px;
+	border-radius: 5px 5px 5px 5px;
+	padding: 8px 10px 2px;
+}
+aside#contactform form#messageForm textarea.inputTA:HOVER, aside#contactform form#messageForm input.inputText:HOVER {
+	border: 1px solid #b2b8be;
+	background-color: #f1f5f7;
 }
 
 /*
